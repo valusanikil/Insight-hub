@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Index</title>
     <link rel="stylesheet" href="/CSS/index.css" />
   </head>
   <body>
@@ -50,7 +50,12 @@
                   <span>Java</span>
                   <div class="rating">⭐⭐⭐⭐⭐</div>
                   <p class="price">159.99$</p>
-                  <button class="add-cart-button">Add to Cart</button>
+                  <button
+                    class="add-cart-button"
+                    onclick="addToCart('Java', 159.99)"
+                  >
+                    Add to Cart
+                  </button>
                 </li>
                 <li>
                   <img
@@ -62,7 +67,12 @@
                   <div class="rating">⭐⭐⭐⭐</div>
                   <p class="price">59.99$</p>
 
-                  <button class="add-cart-button">Add to Cart</button>
+                  <button
+                    class="add-cart-button"
+                    onclick="addToCart('Python Programming', 59.99)"
+                  >
+                    Add to Cart
+                  </button>
                 </li>
                 <li>
                   <img
@@ -74,7 +84,12 @@
                   <div class="rating">⭐⭐⭐⭐⭐</div>
                   <p class="price">79.99$</p>
 
-                  <button class="add-cart-button">Add to Cart</button>
+                  <button
+                    class="add-cart-button"
+                    onclick="addToCart('AWS Cloud Computing', 79.99)"
+                  >
+                    Add to Cart
+                  </button>
                 </li>
                 <li>
                   <img
@@ -86,7 +101,12 @@
                   <div class="rating">⭐⭐⭐⭐⭐</div>
                   <p class="price">99.99$</p>
 
-                  <button class="add-cart-button">Add to Cart</button>
+                  <button
+                    class="add-cart-button"
+                    onclick="addToCart('Machine Learning', 99.99)"
+                  >
+                    Add to Cart
+                  </button>
                 </li>
                 <li>
                   <img
@@ -98,7 +118,12 @@
                   <div class="rating">⭐⭐⭐⭐</div>
                   <p class="price">119.99$</p>
 
-                  <button class="add-cart-button">Add to Cart</button>
+                  <button
+                    class="add-cart-button"
+                    onclick="addToCart('Azure Cloud', 119.99)"
+                  >
+                    Add to Cart
+                  </button>
                 </li>
                 <li>
                   <img
@@ -110,7 +135,12 @@
                   <div class="rating">⭐⭐⭐⭐</div>
                   <p class="price">139.99$</p>
 
-                  <button class="add-cart-button">Add to Cart</button>
+                  <button
+                    class="add-cart-button"
+                    onclick="addToCart('Spring Boot', 139.99)"
+                  >
+                    Add to Cart
+                  </button>
                 </li>
               </ul>
             </div>
@@ -252,5 +282,6 @@
           document.getElementById("footer").innerHTML = data;
         });
     </script>
+    <script src="/JS/index.js"></script>
   </body>
 </html>
