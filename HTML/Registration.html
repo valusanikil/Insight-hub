@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+    <link rel="stylesheet" href="/CSS/Registration.css" />
+  </head>
+  <body>
+    <header class="mainWelcome">
+      <h1 class="welcome">
+        <span class="first-part">INSIGHT</span
+        ><span class="second-part">HUB</span>
+      </h1>
+    </header>
+
+    <div class="container">
+      <form onsubmit="saveData()">
+        <div class="mainLoginContainer">
+          <h2 class="login">Register</h2>
+          <label class="fname" for="fname">First Name</label>
+          <div class="input-container">
+            <input
+              type="text"
+              id="fname"
+              name="fname"
+              placeholder="Enter First Name"
+            />
+          </div>
+
+          <label class="lname" for="lname">Last Name</label>
+          <div class="input-container">
+            <input
+              type="text"
+              id="lname"
+              name="lname"
+              placeholder="Enter Last Name"
+            />
+          </div>
+
+          <label class="email" for="email">Email</label>
+          <div class="input-container">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter email"
+            />
+          </div>
+
+          <label class="password" for="password">Password</label>
+          <div class="input-container">
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Enter Password"
+            />
+          </div>
+
+          <label class="phone" for="phone">Phone</label>
+          <div class="input-container">
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Enter Phone number"
+            />
+          </div>
+
+          <button class="RegisterButton" type="submit">Register</button>
+
+          <p class="loginResult" id="loginResult" name="loginResult"></p>
+
+          <label class="register"
+            >Already have an accont.
+            <a href="/HTML/login.html">Click here</a></label
+          >
+        </div>
+      </form>
+    </div>
+    <script src="/JS/registration.js"></script>
+  </body>
+</html>

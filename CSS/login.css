@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background: url(/Assets/Login\ BG\ Image.jpg) no-repeat center center/cover;
+  position: relative;
+  color: black;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+.mainWelcome {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  text-align: center;
+  padding: 1rem 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3; /* Above the overlay */
+}
+
+.welcome {
+  font-size: 48px;
+  color: transparent;
+  background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient colors */
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-weight: bold;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  padding: 2rem;
+  background-image: linear-gradient(to bottom, #e3f2fd, #90caf9);
+  border-radius: 12px;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  margin-top: 100px;
+}
+
+.mainLoginContainer .login {
+  font-size: 24px;
+  margin-bottom: 1rem;
+  color: black;
+}
+
+.input-container {
+  position: relative;
+  margin-top: 1rem;
+}
+
+.input-container input {
+  width: 100%;
+  padding: 0.75rem;
+  padding-left: 40px; /* Space for icon */
+  font-size: 14px;
+  border: 1px solid #555;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: black;
+  border-radius: 4px;
+  outline: none;
+}
+
+.input-container .icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #aaa;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-top: 1rem;
+}
+
+.options label,
+.options .forgot-password {
+  color: black;
+}
+
+.options .forgot-password:hover {
+  text-decoration: underline;
+}
+
+.loginButton {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #444;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 1.5rem;
+}
+
+.loginButton:hover {
+  background-color: #666;
+  transform: translateY(-2px);
+}
+
+.signup {
+  font-size: 14px;
+  color: black;
+  margin-top: 1rem;
+}
+
+.signup a {
+  color: black;
+  text-decoration: none;
+}
+
+.signup a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+::placeholder {
+  color: white;
+}
+
+.loginResult {
+  color: red;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.welcome {
+  font-size: 48px;
+  font-weight: bold;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  margin: 0;
+}
+
+.first-part {
+  color: #1de9b6; /* First color */
+}
+
+.second-part {
+  color: #00bcd4; /* Second color */
+}

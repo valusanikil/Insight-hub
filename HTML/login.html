@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="/CSS/login.css" />
+  </head>
+  <body>
+    <header class="mainWelcome">
+      <h1 class="welcome">
+        <span class="first-part">INSIGHT</span
+        ><span class="second-part">HUB</span>
+      </h1>
+    </header>
+
+    <div class="container">
+      <form onsubmit="checkData()">
+        <div class="mainLoginContainer">
+          <h2 class="login">Login</h2>
+          <label class="email" for="email">Email</label>
+          <div class="input-container">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter email"
+            />
+            <i class="icon">&#128100;</i>
+          </div>
+
+          <label class="password" for="password">Password</label>
+          <div class="input-container">
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Enter Password"
+            />
+            <i class="icon">&#128274;</i>
+          </div>
+
+          <div class="options">
+            <label><input type="checkbox" name="remember" /> Remember me</label>
+            <a href="#" class="forgot-password">Forgot Password?</a>
+          </div>
+
+          <button class="loginButton" type="submit">Log In</button>
+
+          <p class="loginResult" id="loginResult" name="loginResult"></p>
+
+          <label class="signup"
+            >Don’t have an account?
+            <a href="/HTML/Registration.html">Register</a></label
+          >
+        </div>
+      </form>
+    </div>
+
+    <script src="/JS/login.js"></script>
+  </body>
+</html>

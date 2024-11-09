@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link rel="stylesheet" href="/CSS/about.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div id="mainContainer">
+      <div id="header"></div>
+
+      <div class="outer-container">
+        <h1>About Team</h1>
+
+        <div class="inner-container">
+          <div class="imgBlock">
+            <h2>Nikil Valusa</h2>
+            <img src="/Assets/Nikil.jpeg" alt="Nikil Valusa" />
+            <p>Java Full Stack Developer</p>
+            <a
+              href="https://www.linkedin.com/in/your-profile"
+              class="linkedin-icon"
+              target="_blank"
+            >
+              <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+          </div>
+
+          <div class="imgBlock">
+            <h2>Deekshith Reddy</h2>
+            <img src="/Assets/Deekshith.jpg" alt="Deekshith Reddy" />
+            <p>Data Engineer</p>
+            <a
+              href="https://www.linkedin.com/in/your-profile"
+              class="linkedin-icon"
+              target="_blank"
+            >
+              <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+          </div>
+
+          <div class="imgBlock">
+            <h2>Ravidranath Katta</h2>
+            <img src="/Assets/Ravi.jpg" alt="Ravidranath Katta" />
+            <p>Java Developer</p>
+            <a
+              href="https://www.linkedin.com/in/your-profile"
+              class="linkedin-icon"
+              target="_blank"
+            >
+              <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+          </div>
+
+          <div class="imgBlock">
+            <h2>Manoj Katakam</h2>
+            <img src="/Assets/Manoj Katakam.jpg" alt="Manoj Katakam" />
+            <p>Cobol Developer</p>
+            <a
+              href="https://www.linkedin.com/in/your-profile"
+              class="linkedin-icon"
+              target="_blank"
+            >
+              <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      fetch("/HTML/header.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("header").innerHTML = data;
+        });
+    </script>
+  </body>
+</html>

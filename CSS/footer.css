@@ -1,0 +1,32 @@
+.footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(3, 0, 0);
+  color: white;
+  text-align: center;
+  height: 100px;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+ul li {
+  margin-top: 20px;
+  text-decoration: none;
+  list-style: none;
+}
+
+p {
+  margin-top: 10px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 30px;
+}
